@@ -11,6 +11,16 @@ This is a FreeCodeCamp exercise to create random quote machine. It uses normaliz
 - JavaScript
 - [Programmin Quotes API](http://quotes.stormconsultancy.co.uk/api)
 
+##### Features:
+###### Desktop
+- Loads background image from unsplash.com on page refresh.
+- Border color of the quote box is randomly generated on every new quote.
+
+###### Mobile
+
+- Responsive site.
+- On mobile/tablet view background image is replaced with a randomly generated gradient. Changes for every new quote. Border color will stay white.
+
 ###### You are welcome to read and learn from this code, but do not just copy paste code. You will not learn that way.
 
 
