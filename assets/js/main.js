@@ -25,7 +25,7 @@ checkScreen();
 function onClick() {
   checkScreen();
   fadeOut();
-  setTimeout(function(){ fadeIn(); }, 1300);
+  setTimeout(function(){ fadeIn(); }, 1500);
 
 }
 // - - - - - Injects JSONP to head and fetches new quote when button is clicked. - - - - - //
