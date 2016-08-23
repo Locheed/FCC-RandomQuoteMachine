@@ -13,6 +13,7 @@ body {
     opacity: 1;
     transition: opacity 300ms ease-in-out 1s; }
   body #content {
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     margin-top: 25vh;
