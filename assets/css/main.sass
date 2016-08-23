@@ -1,0 +1,105 @@
+// Load background image from unsplash if screen over 1024px. Else fallback color.
+body
+  font-family: 'Book Antiqua', 'Palatino Linotype'
+  @media (min-width: 1024px)
+    background: url(https://source.unsplash.com/category/nature) no-repeat center center fixed
+    background-size: cover
+  @media (max-width: 1024px)
+    background: skyblue
+
+  // FadeIn and FadeOut of quote.
+  .anim
+    opacity: 0
+  p
+    opacity: 1
+    transition: opacity 300ms ease-in-out 1s
+  // Container for quotes.
+  #content
+    position: relative
+    margin-left: auto
+    margin-right: auto
+    margin-top: 25vh
+    margin-bottom: 25vh
+    height: 250px
+    width: 700px
+    background-color: transparentize(white, 0.5)
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    border-radius: 40px
+    border: 3px solid transparentize(white, 0.3)
+
+    // Wrapper for quote.
+    .content-quote
+      width: 100%
+      height: 85%
+
+      // Quote
+      #quote
+        margin-top: 10px
+        margin-bottom: 0
+        padding: 20px
+        padding-bottom: 0
+        font-size: 20px
+        font-weight: bold
+        color: #444
+        text-align: justify
+
+    // Wrapper for author.
+    .content-author
+
+      // Authors name.
+      #author
+        font-size: 18px
+        color: #444
+        align-self: flex-start
+        margin-left: 40px
+
+      // Button styles.
+      #getQuote
+        font-family: Helvetica
+        font-weight: bold
+        font-size: 16px
+        letter-spacing: 1.5px
+        margin-right: 40px
+        margin-bottom: 20px
+        padding: 10px 25px 10px 25px
+        color: #666
+        background: transparentize(white, 0.4)
+        box-shadow: 0 0 5px #444
+        border-radius: 15px
+        border: 1px solid #666
+
+        // Button in active state.
+        &:active
+          box-shadow: 0 0 5px
+          background: transparentize(white, 0.2)
+          color: darken(#666, 20%)
+          border-radius: 15px
+
+        // Button on focus state.
+        &:focus
+          outline: none
+          box-shadow: 0 0 5px rgba(81, 203, 238, 1)
+          border: 1px solid rgba(81, 203, 238, 1)
+          border-radius: 15px
+
+  // Just footer styling.
+  footer
+    text-align: center
+    margin-left: auto
+    margin-right: auto
+    width: 50vh
+    font-weight: 600
+    color: white
+    margin-top: 20%
+    letter-spacing: 1px
+    background-color: rgba(153, 153, 153, 0.5)
+    padding: 6px
+    border-radius: 15px
+
+    a
+      color: rgb(18, 224, 107)
+      text-decoration: none
+      &:hover
+        color: darken(rgb(18, 224, 107), 10%)
